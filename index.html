@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Kuchnahi Ji — Career Mission</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="back-btn" class="back-btn hidden-back" type="button" aria-label="Go to previous page">← Back</button>
+  <div class="noise"></div>
+  <main id="app">
+    <section class="screen active" id="screen-0">
+      <div class="hero-card cinematic">
+        <div class="eyebrow">PRIVATE FRIEND MODE 🔒</div>
+        <h1 class="reveal-line">Ek secret message hai…</h1>
+        <p class="muted">Open karne ki himmat hai? 👀</p>
+        <button class="primary" data-next>Reveal karo →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-1">
+      <div class="hero-card center">
+        <div class="friend-photo-wrap">
+          <img src="assets/friend-photo.png" alt="Funny childhood memory" class="friend-photo" />
+          <span class="photo-badge">Dost mode ON 😂</span>
+        </div>
+        <div class="mini-orbit">✨</div>
+        <h2>Main tera dost <span>Krishna</span> hu 😌</h2>
+        <p class="pause">Haan, wahi dost jo kabhi motivate karega… aur kabhi dimag bhi khayega 😂</p>
+        <div class="cut-joke">Lord Krishna nahi hu bhai 😂<br><small>Bas naam same hai… dost wala version.</small></div>
+        <button class="primary" data-next>Aage badho →</button>
+      </div>
+    </section>
+
+    <section class="screen photo-pattern" id="screen-2">
+      <div class="panel-grid intro-grid">
+        <div class="panel big">
+          <div class="eyebrow">MISSION 01</div>
+          <h2>Ye koi motivation lecture nahi hai 😌</h2>
+          <p>Thoda mazak, thoda roast, thoda sach… aur ek dost ki taraf se career ka halka sa dhakka 😂</p>
+          <div class="chips">
+            <span>Pakki dosti 🤝</span><span>Bigger goals 🎯</span><span>Zero boring gyaan 😴</span>
+          </div>
+          <button class="primary" data-next>Mission start 🚀</button>
+        </div>
+        <div class="panel quote-card">
+          <p>“Perfect hona zaroori nahi. Bas dost, rukna nahi 😌”</p>
+          <div class="tiny">— Krishna, Dost Department 😂</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen photo-pattern" id="screen-3">
+      <div class="section-head">
+        <div><div class="eyebrow">MISSION 02</div><h2>Hamari Chat Museum 😂</h2></div>
+        <button class="ghost" data-next>Skip nahi, next 😌 →</button>
+      </div>
+      <div class="chat-grid">
+        <button class="chat-card locked" data-chat="1"><span>Evidence #01</span><b>Click to unlock 🔓</b></button>
+        <button class="chat-card locked" data-chat="2"><span>Evidence #02</span><b>Click to unlock 🔓</b></button>
+        <button class="chat-card locked" data-chat="3"><span>Evidence #03</span><b>Click to unlock 🔓</b></button>
+        <button class="chat-card locked" data-chat="4"><span>Evidence #04</span><b>Click to unlock 🔓</b></button>
+      </div>
+      <div class="chat-stage" id="chat-stage">
+        <p class="muted">Ek card kholo. Embarrassing evidence yahin milega 😂</p>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-4">
+      <div class="section-head">
+        <div><div class="eyebrow">MISSION 03</div><h2>Aaj ka mood kya hai?</h2></div>
+      </div>
+      <div class="moods">
+        <button data-mood="focus">😎<span>Full Focus</span></button>
+        <button data-mood="lazy">😴<span>Lazy</span></button>
+        <button data-mood="confused">😵‍💫<span>Confused</span></button>
+        <button data-mood="kuchnahi">😑<span>Kuchnahi</span></button>
+      </div>
+      <div class="response-card" id="mood-response">Mood select karo, system report dega 😂</div>
+      <button class="primary next-inline" data-next>Roadmap kholo →</button>
+    </section>
+
+    <section class="screen" id="screen-5">
+      <div class="section-head">
+        <div><div class="eyebrow">MISSION 04</div><h2>Career Roadmap 🎯</h2></div>
+      </div>
+      <p class="muted">Step by step. No overthinking. Click each level to unlock the next.</p>
+      <div class="roadmap" id="roadmap">
+        <button class="step unlocked" data-step="0"><b>1</b><span>Skills</span><small>Learn & revise</small></button>
+        <button class="step" data-step="1"><b>2</b><span>Practice</span><small>Solve & build</small></button>
+        <button class="step" data-step="2"><b>3</b><span>Project</span><small>Proof of skill</small></button>
+        <button class="step" data-step="3"><b>4</b><span>Apply</span><small>Send applications</small></button>
+        <button class="step" data-step="4"><b>5</b><span>Interview</span><small>Speak with confidence</small></button>
+        <button class="step" data-step="5"><b>6</b><span>Job</span><small>Level unlocked ✨</small></button>
+      </div>
+      <div class="response-card" id="roadmap-response">Level 1 se start karo 😌</div>
+      <button class="primary next-inline" data-next>Excuse battle 😂 →</button>
+    </section>
+
+    <section class="screen" id="screen-6">
+      <div class="section-head">
+        <div><div class="eyebrow">MISSION 05</div><h2>Kuchnahi Ji vs Excuses 😂</h2></div>
+      </div>
+      <div class="battle-grid">
+        <div class="excuse-box">
+          <h3>Excuses</h3>
+          <button data-excuse="1">Aaj mann nahi hai</button>
+          <button data-excuse="2">Time nahi hai</button>
+          <button data-excuse="3">Mere se nahi hoga</button>
+          <button data-excuse="4">Kal se karungi</button>
+          <button data-excuse="5">Perfect opportunity ka wait hai</button>
+        </div>
+        <div class="vs">VS</div>
+        <div class="reality-box">
+          <h3>Reality Check</h3>
+          <div id="excuse-response">Koi excuse choose karo. Dost department ready hai 😂</div>
+        </div>
+      </div>
+      <button class="primary next-inline" data-next>Serious wali baat →</button>
+    </section>
+
+    <section class="screen photo-pattern" id="screen-7">
+      <div class="hero-card soft">
+        <div class="eyebrow">MISSION 06</div>
+        <h2>Tum jitna strong dikhti ho na…</h2>
+        <div class="ellipsis">…</div>
+        <p class="big-copy">utna har time strong rehna zaroori nahi hai.</p>
+        <p>Kabhi kuch samajh na aaye, ya kisi decision me confusion ho, ek baar mere se puch lena. Dost hu — judge nahi. Galat hoga to tokunga, sahi hoga to clap bhi karunga 😌</p>
+        <div class="cut-joke">Free consultation hai… abhi tak 😂</div>
+        <button class="primary" data-next>Thoda aur bakwas baki hai 😂 →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-8">
+      <div class="section-head">
+        <div><div class="eyebrow">MISSION 07</div><h2>Krishna se advice lo 😂</h2></div>
+      </div>
+      <div class="advice-zone">
+        <button class="magic" id="advice-btn">Random advice ✨</button>
+        <div class="advice-card" id="advice-card">Button dabao. Gyaan limited quantity me milega 😂</div>
+      </div>
+      <button class="primary next-inline" data-next>Final mission →</button>
+    </section>
+
+    <section class="screen photo-pattern" id="screen-9">
+      <div class="final-celebration" id="final-celebration" aria-hidden="true">
+        <div class="confetti-side left"></div>
+        <div class="confetti-side right"></div>
+        <div class="photo-drop-shell">
+          <img src="assets/friend-main.png" alt="Friend" class="final-drop-photo" />
+          <div class="photo-drop-caption">Dost mode: full power 😄</div>
+        </div>
+        <div class="photo-side-note">
+          <strong>Dost mode: full power 😄</strong>
+          <span>Chhote steps. Big result. Tu kar sakti hai 💙</span>
+        </div>
+      </div>
+      <div class="final-wrap">
+        <div class="sunset-orb"></div>
+        <div class="eyebrow">FINAL MISSION</div>
+        <h2>You can do it, Dost 💙</h2>
+        <p>Masti apni jagah, but dost wali ek serious baat — tum capable ho. Daily thoda progress rakho. Job ek din me nahi milegi, but roz thoda kaam karogi to rasta pakka banega. Main bas yaad dilane wala dost hu 😌</p>
+        <div class="mission-picker">
+          <button>💻 30 min coding</button>
+          <button>🗣️ 15 min English</button>
+          <button>📨 1 job apply</button>
+          <button>📄 Resume update</button>
+        </div>
+        <div class="last-reveal hidden" id="last-reveal">
+          <h3>Are ruk… ek last baat 😂</h3>
+          <p>Kabhi Bhutnath Mandir jana ho aur tumhe problem na ho to mere ko bol dena. Thoda ghoom lenge, mandir jayenge, mood fresh ho jayega 😄</p>
+          <div class="cut-joke">Condition: Kuchnahi mode ghar pe chhod ke aana 😂</div>
+        </div>
+        <button class="primary" id="final-btn">Finish? 😌</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="progress"><div id="progress-bar"></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
