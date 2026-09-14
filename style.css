@@ -107,3 +107,19 @@ button{font:inherit;color:inherit}.noise{position:fixed;inset:0;pointer-events:n
 @keyframes celebrationFade{to{opacity:0;visibility:hidden}}
 @media(max-width:900px){.photo-drop-shell{left:2.5vw;width:min(290px,36vw);height:min(66vh,590px)}.photo-side-note{left:calc(2.5vw + min(290px,36vw) + 12px);top:34vh;width:min(220px,26vw);padding:12px 14px}.photo-side-note span{font-size:.78rem}}
 @media(max-width:700px){.photo-drop-shell{left:16px;width:min(235px,56vw);height:min(58vh,500px);border-radius:22px}.photo-side-note{left:auto;right:12px;top:35vh;width:min(170px,36vw);padding:10px 11px}.photo-side-note::before{display:none}.photo-side-note strong{font-size:.82rem}.photo-side-note span{font-size:.7rem}.confetti-side{width:90px}.photo-drop-caption{bottom:10px;font-size:.82rem}}
+/* FINAL PAGE — image left, main content right */
+@media (min-width: 901px) {
+
+  #screen-9 {
+    justify-content: flex-end;
+    padding-left: 390px;
+    padding-right: 45px;
+  }
+
+  #screen-9 .final-wrap {
+    width: 100%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
